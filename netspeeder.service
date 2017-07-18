@@ -1,0 +1,8 @@
+[Unit]
+Description=Net Speeder
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/net_speeder eth0 "ip"
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
